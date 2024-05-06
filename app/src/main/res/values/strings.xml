@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidLocation</string>
+
+    <string name="my_map_api_key">AIzaSyDU7lF47waqDN_I6Bu8LXDEOh2RLo9lob8</string>
+</resources>
