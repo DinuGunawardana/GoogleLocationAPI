@@ -28,7 +28,7 @@ import com.google.android.gms.tasks.Task;
 public class MainActivity extends AppCompatActivity {
 
     private Button currentLocation;
-    private Button searchview, mapMenu1;
+    private Button searchview, mapMenu1, ShowTrack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         currentLocation = findViewById(R.id.currentLocation);
         searchview = findViewById(R.id.searchView);
         mapMenu1 = findViewById(R.id.mapMenu);
+        ShowTrack = findViewById(R.id.showTrack);
 
         currentLocation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), MapMenu.class));
+            }
+        });
+
+        ShowTrack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ShowTrachMap.class));
             }
         });
     }
