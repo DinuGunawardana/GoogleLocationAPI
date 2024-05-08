@@ -17,10 +17,14 @@
         android:theme="@style/Theme.AndroidLocation"
         tools:targetApi="31">
         <activity
+            android:name=".ZoomandCompassControls"
+            android:exported="false"/>
+        <activity
             android:name=".ShowTrachMap"
             android:exported="false" />
         <activity
             android:name=".MapMenu"
+            android:theme="@style/DetailTheme"
             android:exported="false" />
         <activity
             android:name=".SearchViewActivity"

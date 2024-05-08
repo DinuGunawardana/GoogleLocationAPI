@@ -34,7 +34,7 @@ public class MapMenu extends AppCompatActivity implements OnMapReadyCallback {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_current_location);
+        setContentView(R.layout.activity_map_menu);
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 

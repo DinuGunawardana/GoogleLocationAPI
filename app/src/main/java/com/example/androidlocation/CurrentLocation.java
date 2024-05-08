@@ -90,4 +90,4 @@ public class CurrentLocation extends AppCompatActivity implements OnMapReadyCall
                 }
             }
         }
-    }
+}
