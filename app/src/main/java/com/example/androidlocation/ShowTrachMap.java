@@ -39,7 +39,7 @@ public class ShowTrachMap extends AppCompatActivity {
 
     private void btnGetDirection(String from, String to) {
         try {
-            Uri uri = Uri.parse("https://www.google.com/maps/dir" + from + "/" + to);
+            Uri uri = Uri.parse("https://www.google.com/maps/dir/" + from + "/" + to);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             intent.setPackage("com.google.android.apps.maps");
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
